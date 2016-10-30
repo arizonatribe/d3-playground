@@ -1,0 +1,39 @@
+@import 'mixins';
+@import 'colors';
+
+html, body {
+	font-family: 'Open Sans' sans-serif;
+	height: 100%;
+	* {
+		font-family: 'Open Sans' sans-serif;
+	}
+}
+
+a {
+	cursor: pointer;
+}
+
+body {
+    padding: 0;
+    height: 100vh;
+    margin: 0;
+    background: @lt_white;
+}
+
+.container {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    
+    header {
+    	z-index: 1;
+    	position: fixed;
+    }
+
+    main {
+    	position: relative;
+    	top: 70px;
+    }
+}
+
+@import './components/pie';
