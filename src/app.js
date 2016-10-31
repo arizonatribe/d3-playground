@@ -2,11 +2,11 @@ import 'babel-polyfill';
 import React from 'react';
 import {render} from 'react-dom';
 
-import Chart from './components/chart';
+import Heatmap from './components/heatmap';
 import '../assets/styles/app.less';
 
 render(
-    <Chart />,
+    <Heatmap />,
     document.getElementById('app')
 );
 
